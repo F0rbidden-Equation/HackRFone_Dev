@@ -2,6 +2,12 @@
 # Program Auto Install for HackRF_One
 ## Presentations
 ### this program is intended, to simplify the installation program for the SDR HackRF One card
+### Kits Programs Custom added in the program :
+#### Gnuradio
+#### HackRF One 
+#### URH Universal radio hackers
+#### gr-gsm
+
 ## Install Ubuntu 18 
 #### > sudo chmod +x  Auto_Install_hackRF-One.sh
 #### > sudo sh Auto_Install_hackRF-One.sh
