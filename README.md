@@ -3,5 +3,5 @@
 ## Presentations
 ### this program is intended, to simplify the installation program for the SDR HackRF One card
 ## Install Ubuntu 18 
-### > sudo chmod +x  Auto_Install_hackRF-One.sh
-### > sudo sh Auto_Install_hackRF-One.sh
+#### > sudo chmod +x  Auto_Install_hackRF-One.sh
+#### > sudo sh Auto_Install_hackRF-One.sh
