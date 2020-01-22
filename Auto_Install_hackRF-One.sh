@@ -28,7 +28,7 @@ make
 sudo make install
 
 apt-get install gr-osmosdr
-
+apt install hackrf
 
 cd
 python3 -m pip install cython
