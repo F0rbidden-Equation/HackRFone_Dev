@@ -1,6 +1,6 @@
 #!/bin/bash
 
-sudo apt install git cmake g++ libboost-all-dev libgmp-dev swig python3-numpy python3-mako python3-sphinx python3-lxml doxygen libfftw3-dev libcomedi-dev libsdl1.2-dev libgsl-dev libqwt-qt5-dev libqt5opengl5-dev python3-pyqt5 liblog4cpp5-dev libzmq3-dev python3-yaml
+sudo apt install git cmake g++ automake autoconf libhackrf-dev hackrf libboost-all-dev libgmp-dev swig python3-numpy python3-mako python3-sphinx python3-lxml doxygen libfftw3-dev libcomedi-dev libsdl1.2-dev libgsl-dev libqwt-qt5-dev libqt5opengl5-dev python3-pyqt5 liblog4cpp5-dev libzmq3-dev python3-yaml
 
 git clone --recursive https://github.com/gnuradio/gnuradio.git
 cd gnuradio
@@ -19,7 +19,16 @@ make
 sudo make install
 sudo ldconfig
 
-sudo apt-get install automake autoconf libhackrf-dev
+git clone git://git.osmocom.org/gr-osmosdr
+cd gr-osmosdr/
+mkdir build && cd build/
+cmake ../
+make
+sudo make install
+sudo ldconfig
+
+
+
 git clone https://github.com/scateu/kalibrate-hackrf
 cd kalibrate-hackrf/
 ./bootstrap
@@ -27,8 +36,8 @@ cd kalibrate-hackrf/
 make
 sudo make install
 
-apt-get install gr-osmosdr
-apt install hackrf
+
+
 
 cd
 python3 -m pip install cython
