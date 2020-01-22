@@ -19,7 +19,13 @@ make
 sudo make install
 sudo ldconfig
 
-
+sudo apt-get install automake autoconf libhackrf-dev
+git clone https://github.com/scateu/kalibrate-hackrf
+cd kalibrate-hackrf/
+./bootstrap
+./configure
+make
+sudo make install
 
 apt-get install gr-osmosdr
 
