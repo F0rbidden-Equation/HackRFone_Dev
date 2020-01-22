@@ -1,6 +1,11 @@
 #!/bin/bash
 
-sudo apt install git cmake g++ automake autoconf libhackrf-dev hackrf libboost-all-dev libgmp-dev swig python3-numpy python3-mako python3-sphinx python3-lxml doxygen libfftw3-dev libcomedi-dev libsdl1.2-dev libgsl-dev libqwt-qt5-dev libqt5opengl5-dev python3-pyqt5 liblog4cpp5-dev libzmq3-dev python3-yaml
+sudo apt install git cmake g++ automake autoconf hackrf libhackrf-dev  libboost-all-dev libgmp-dev swig python3-numpy python3-mako python3-sphinx python3-lxml doxygen libfftw3-dev libcomedi-dev libsdl1.2-dev libgsl-dev libqwt-qt5-dev libqt5opengl5-dev python3-pyqt5 liblog4cpp5-dev libzmq3-dev python3-yaml
+
+
+sudo apt-get update
+sudo apt-get upgrade
+
 
 git clone --recursive https://github.com/gnuradio/gnuradio.git
 cd gnuradio
